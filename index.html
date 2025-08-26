@@ -20,6 +20,7 @@
         display: flex;
         gap: 30px;
         flex-wrap: wrap;
+        justify-content: center;
       }
 
       .column {
@@ -38,21 +39,21 @@
       }
 
       a {
-        width: 90px;
-        height: 30px;
-        background-color: #ff6433;
-        border-radius: 7px;
-        color: #fff;
-        text-align: center;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        font-size: 12px;
-        margin-bottom: 10px;
-        transition: all 0.5s ease;
-        flex-direction: column;
+        width: 140px;
+      height: 50px;
+      background-color: #ff6433;
+      border-radius: 7px;
+      color: #fff;
+      text-align: center;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 17px;
+      margin-bottom: 10px;
+      transition: all 0.5s ease;
+      flex-direction: column;
       }
 
       a:hover {
@@ -68,9 +69,10 @@
         margin-top: 60px;
         color: #ff6433;
         background: #ff6433;
-        background: linear-gradient(to right, #ff6433 0%, #fb3186 20%);
+        background: linear-gradient(to bottom, #ff6433 50%, #fb3186 40%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        text-align: center;
       }
 
       .main-heading h2 span {
@@ -79,11 +81,7 @@
         line-height: 35px;
       }
 
-      svg {
-        position: absolute;
-        right: 50px;
-        top: -20px;
-      }
+      
       .heading h2 {
         font-size: 17px;
       }
@@ -94,36 +92,23 @@
         }
       }
 
-      .table {
+      .tab{
         display: flex;
-        gap: 10px;
-        justify-content: space-between;
-      }
-      .name {
-        font-size: 12px;
-        display: inline-block;
-        background-color: #383838;
-        border-radius: 8px;
-        margin-bottom: 20px;
-        font-weight: bold;
-        border: #8c8c8c solid 1px;
-        width: 90%;
-        height: 30px;
-        display: flex;
-        align-items: center;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
       }
-      .table .right .name {
-        margin-left: auto;
+      .logo{
+        text-align: center;
       }
     </style>
   </head>
 
   <body>
-    <svg
+    <div class="logo"><svg
       xmlns="http://www.w3.org/2000/svg"
-      width="200"
-      height="167"
+      width="300"
+      height="100"
       viewBox="0 0 66.07 21.646"
     >
       <g
@@ -188,20 +173,14 @@
           fill="#003672"
         />
       </g>
-    </svg>
+    </svg></div>
     <div class="main-heading">
       <h2>
         <span class="pid">OSUK-200491</span> JetBlue Plus Card Pre-Quel
       </h2>
     </div>
-    <div class="links">
-      <div class="column">
-        <div class="heading">
-          <h2>BOS to Florida</h2>
-        </div>
-        <div class="table">
-          <div class="left">
-            <a
+    <div class="tab">
+      <a
               href="base/JetBlue_PlusCard_080525_LTO_DisplayBanners_Sky80k_HTML5_160x600_base/index.html"
               target="_blank"
               >160x600</a
@@ -221,9 +200,6 @@
               target="_blank"
               >728x90</a
             >
-          </div>
-        </div>
-      </div>
     </div>
   </body>
 </html>
