@@ -31,8 +31,7 @@ function animate() {
   .addLabel('frame2', 8.5)
     .to(['#copy2, #card, #logo, #term'], 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, 'frame2')
     .to('#lastFrame',0.5,{x: 0, ease: Power1.easeInOut}, 'frame2')
-    .to('#shine', 0.5, {backgroundPosition: '530px 0px'}, 'frame2+=1');
-
+    .to('#shine', 0.5, {backgroundPosition: '535px 0px'}, 'frame2+=1');
 }
 
 function setRollover() {
