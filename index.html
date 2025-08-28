@@ -13,11 +13,23 @@
         margin: 0px;
         padding: 0px;
         font-family: Arial, Helvetica, sans-serif;
-        padding: 50px;
+        background: url('./bg.jpg') repeat-x;
+        background-size: 2000px;
+        animation: slide 60s linear infinite;
+        display: flex;
+        justify-content: center;
+      }
+      @keyframes slide {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: -500px 0; /* adjust based on image width */
+        }
       }
 
       a {
-        width: 140px;
+        width: 130px;
         height: 50px;
         background-color: #ff6433;
         border-radius: 7px;
@@ -28,7 +40,7 @@
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 15px;
         margin-bottom: 10px;
         transition: all 0.5s ease;
         flex-direction: column;
@@ -39,33 +51,15 @@
       }
 
       .main-heading h2 {
-        font-size: 50px;
+        font-size: 20px;
         font-weight: 800;
-        line-height: 54px;
         margin: 0px;
-        margin-bottom: 30px;
-        margin-top: 60px;
-        color: #ff6433;
-        background: #ff6433;
-        background: linear-gradient(to bottom, #ff6433 50%, #fb3186 40%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        margin-bottom: 0px;
+        color: #00205b;
         text-align: center;
+        padding-bottom: 12px;
+        font-weight: normal;
       }
-
-      .main-heading h2 span {
-        display: block;
-        font-size: 30px;
-        line-height: 35px;
-      }
-
-
-      @media only screen and (max-width: 992px) {
-        .main-heading h2 {
-          font-size: 50px;
-        }
-      }
-
       .tab{
         display: flex;
         justify-content: center;
@@ -74,17 +68,31 @@
       }
       .tab h3{
         text-align: center;
+        color: #00205b;
       }
       .logo{
         text-align: center;
       }
+      .glass {
+  background: rgba(255, 255, 255, 0.1); /* translucent background */
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 350px;
+  margin-top: 15px;
+  padding: 10px;
+  border-top: #ff6433 solid 10px;
+}
     </style>
   </head>
 
   <body>
-    <div class="logo"><svg
+    <div class="glass">
+      <div class="logo"><svg
       xmlns="http://www.w3.org/2000/svg"
-      width="300"
+      width="200"
       height="100"
       viewBox="0 0 66.07 21.646"
     >
@@ -152,9 +160,7 @@
       </g>
     </svg></div>
     <div class="main-heading">
-      <h2>
-        <span class="pid">OSUK-200491</span> JetBlue Plus Card Pre-Quel
-      </h2>
+      <h2>OSUK-200491<br> JetBlue Plus Card <br> Pre-Quel / Urgency</h2>
     </div>
     <div class="tab">
       <div class="block">
@@ -203,6 +209,7 @@
               >728x90</a
             >
       </div>
+    </div>
     </div>
   </body>
 </html>
